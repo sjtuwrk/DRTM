@@ -178,7 +178,8 @@ void RawUint64BPlusTree::Iterator::Seek(uint64_t key)
   }
   if (k == num) {
     node_ = leaf->right;
-    leaf_index = 0;
+    leaf_index = 0;
+
   }
   else {
     leaf_index = k;

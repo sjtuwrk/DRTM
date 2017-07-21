@@ -564,7 +564,8 @@ class RawUint64BPlusTree: public RAWStore {
 	      new_sibling->children[i]= inner->children[treshold+i];
 	    }
 	    new_sibling->children[new_sibling->num_keys]=
-	      inner->children[inner->num_keys];
+	      inner->children[inner->num_keys];
+
 
 	    //XXX: should threshold ???
 	    inner->num_keys= treshold-1;
